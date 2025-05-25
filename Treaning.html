@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-white w-full p-2 shadow flex items-center justify-between">
+      <div class="flex items-center flex-1">
+        <div class="relative inline-block text-left">
+          <button
+            id="dropdownButton"
+            class="flex items-center gap-2 p-2 rounded-full hover:bg-gray-100 focus:outline-none"
+          >
+            <div class="w-8 h-8 rounded-full bg-gray-300">
+              <img
+                src="./07fd4b021b913b8a47a365bfef36598790a687fe.jpg"
+                alt="User profile"
+                class="w-8 h-8 rounded-full object-cover"
+              />
+            </div>
+            <span class="font-semibold">Dominique Ch.</span>
+            <i class="fas fa-chevron-down text-sm"></i>
+          </button>
+          <div id="dropdownMenu" class="hidden absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-lg z-20">
+            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-t-xl">
+              <i class="fas fa-user text-gray-600"></i> My details
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100">
+              <i class="fas fa-calendar-alt text-gray-600"></i> My calendar
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100">
+              <i class="fas fa-umbrella-beach text-gray-600"></i> Vacations
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100">
+              <i class="fas fa-file-alt text-gray-600"></i> Corporate CV
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-b-xl">
+              <i class="fas fa-rocket text-gray-600"></i> Performance review
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 text-sm text-gray-500 ml-8 cursor-pointer">
+          <img src="./search.png" alt="Search icon" class="w-5 h-5" />
+          <span>Quick search</span>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="./notifications.png" alt="Notifications icon" class="w-5 h-5 cursor-pointer" />
+      </div>
+    </header>
+
+    <div class="flex h-[calc(100vh-64px)]">
+      <aside class="w-64 p-6 flex flex-col justify-between bg-gray-100">
+        <div class="bg-white rounded-xl shadow px-3 py-4 space-y-2">
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./dashboard.png" alt="Dashboard icon" class="w-5 h-5" />
+            <span>Dashboard</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./PO.png" alt="People icon" class="w-5 h-5" />
+            <span>People</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./assignment.png" alt="Projects icon" class="w-5 h-5" />
+            <span>Projects</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./_ionicons_svg_md-calendar.png" alt="Calendar icon" class="w-5 h-5" />
+            <span>Calendar</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./_ionicons_svg_md-easel.png" alt="Training icon" class="w-5 h-5" />
+            <span>Training</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./_ionicons_svg_md-hourglass.png" alt="Timesheet icon" class="w-5 h-5" />
+            <span>Timesheet</span>
+          </a>
+          <a href="#" class="flex items-center space-x-3 text-blue-600 bg-blue-50 p-2 rounded">
+            <img src="./_ionicons_svg_md-chatbubbles.png" alt="Reports icon" class="w-5 h-5" />
+            <span>Reports</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./AS.png" alt="Administration icon" class="w-5 h-5" />
+            <span>Administration</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded hover:bg-blue-50"
+          >
+            <img src="./people.png" alt="Help icon" class="w-5 h-5" />
+            <span>Help</span>
+          </a>
+        </div>
+        <div class="bg-white rounded-lg text-center py-4">
+          <p class="text-xs font-extrabold font-[Montserrat]">CAMIOCA</p>
+          <p class="text-[10px] text-gray-500 font-[Roboto]">Version: 1.0.0.11</p>
+        </div>
+      </aside>
+
+      <main class="flex-1 p-3 overflow-y-auto flex flex-col gap-6 relative pt-[25px]">
+        <div class="flex flex-wrap gap-6">
+          <div
+            class="w-[214px] h-[116px] bg-blue-500 text-white rounded-xl flex flex-col items-center justify-center cursor-pointer"
+          >
+            <img src="./_ionicons_svg_md-filing.png" alt="Training timetable icon" />
+            <p>Training timetable</p>
+          </div>
+          <div
+            class="w-[214px] h-[116px] bg-white rounded-xl flex flex-col items-center justify-center cursor-pointer"
+          >
+            <img src="./_ionicons_svg_md-search.png" alt="Find training icon" />
+            <p>Find training</p>
+          </div>
+          <div
+            class="w-[214px] h-[116px] bg-white rounded-xl flex flex-col items-center justify-center cursor-pointer"
+          >
+            <img src="./_ionicons_svg_md-document.png" alt="Feedback icon" />
+            <p>Feedback</p>
+          </div>
+
+          <div
+            class="w-[214px] h-[116px] bg-white text-black rounded-xl flex flex-col items-center justify-center cursor-pointer"
+          >
+            <img src="./_ionicons_svg_md-help.png" alt="Quizzes icon" />
+            <p>Quizzes</p>
+          </div>
+          <div
+            class="w-[214px] h-[116px] bg-white rounded-xl flex flex-col items-center justify-center cursor-pointer"
+          >
+            <img src="./baseline-assignment_turned_in-24px.png" alt="Training registration icon" />
+            <p class="text-black">Training registration</p>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <h2 class="text-xl font-semibold text-gray-800 mb-6">Filter</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+            <div>
+              <label for="select-date" class="block text-sm font-medium text-gray-700 mb-1">Select the date</label>
+              <div class="relative">
+                <input
+                  type="date"
+                  id="select-date"
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  value="2019-07-01"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="branch" class="block text-sm font-medium text-gray-700 mb-1">Branch</label>
+              <select
+                id="branch"
+                name="branch"
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              >
+                <option>Paris</option>
+                <option>London</option>
+                <option>New York</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="field-of-knowledge" class="block text-sm font-medium text-gray-700 mb-1"
+                >Field of knowledge</label
+              >
+              <select
+                id="field-of-knowledge"
+                name="field-of-knowledge"
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              >
+                <option>All</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="language" class="block text-sm font-medium text-gray-700 mb-1">Language</label>
+              <select
+                id="language"
+                name="language"
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              >
+                <option>All</option>
+                <option>English</option>
+                <option>French</option>
+              </select>
+            </div>
+
+            <div class="md:col-span-1">
+              <div class="bg-blue-50 border border-blue-200 text-blue-700 p-4 rounded-md text-sm">
+                <span class="font-semibold">Note:</span> Training time is displayed in your local time
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="./Group 3.png" alt="Additional image content" class="h-[850px] w-[1200px]"">
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const dropdownButton = document.getElementById("dropdownButton");
+      const dropdownMenu = document.getElementById("dropdownMenu");
+
+      dropdownButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
